@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Porfolio profesional que muestra mis habilidades como **Desarrollador full Stack** especializado en **React.js**, **Node.js**, **SQL** y **Testing QA Manual**. El sitio presenta mis proyectos, certificaciones y experiencia de manera elegante y responsiva.
+Porfolio profesional que muestra mis habilidades como **Desarrollador full Stack** especializado en **React.js**, **Node.js**, **SQL**, **Testing QA Manual** y **Cloud Computing (AWS)**. El sitio presenta mis proyectos, certificaciones y experiencia de manera elegante y responsiva.
 
 ## Características Principales 
 
@@ -41,7 +41,7 @@ portfolio/
 - Descripción de habilidades y enfoque
 
 ### 2. **Certifiaciones**
-- 9 Certifiaciones de coderhause
+- 10 Certifiaciones de coderhause
 - Diseño en grid y responsivo
 - Links a certificados verificables
 
@@ -50,6 +50,7 @@ portfolio/
 - **Tienda de ropa deportiva** (Full stack - Node.js, MongoDB y React.js)
 - **Sistema SQL** (Base de datos MySQL - Triggers, Stored Procedure, Vistas)
 - **Testing QA Manual** (Documentación completa - Casos de Prueba, Reporte de Bugs)
+- **Cloud Computing (Aws)** (Dodcumentacion completa para hacer una migración a AWS)
 
 ### 4. **Contacto**
 - Enlaces directos a email, WhatsApp, LinkedIn
