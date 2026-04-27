@@ -2,7 +2,7 @@
   "name": "martin-matarrese",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://martinmatarrese.github.io/martin-matarrese/",
+  "homepage": "https://github.com/MartinMatarrese/martin-matarrese",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "@fortawesome/react-fontawesome": "^3.1.1",
