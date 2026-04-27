@@ -1,0 +1,422 @@
+.carrusel-sql {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 
+        o 10px 30px rgba(0, 0, 0, 0.4)
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    touch-action: pan-y;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.slick-arrow {
+    width: 40px;
+    height: 40px;
+    background: rgba(59, 130, 246, 0.8);
+    border-radius: 50%;
+    z-index: 10;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.slick-arrow:hover {
+    background: rgba(59, 130, 246, 1);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.slick-arrow::before {
+    color: white;
+    font-size: 20px;
+    opacity: 0.9;
+    font-weight: bold;
+}
+
+.slick-prev {
+    left: 15px;
+}
+
+.slick-next {
+    right: 15px;
+}
+
+.slick-prev::before {
+    content: "←";
+}
+
+.slick-next::before {
+    content: "→";
+}
+
+.slide-sql {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: rgba(30, 41, 59, 0.6);
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+.slick-slider.slide-sql {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-sql:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.slide-sql img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    background: rgba(15, 23, 42, 0.8);
+    padding: 20px;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.slide-sql:hover img {
+    transform: scale(1.02);
+}
+
+.slide-info-sql {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top,
+        rgba(0, 0, 0, 0.95) 0%,
+        rgba(0, 0, 0, 0.8) 50%,
+        rgba(0, 0, 0, 0.6) 100%);
+    color: white;
+    padding: 1.25rem;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.slide-info-sql h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #f8fafc;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 0.01rem;
+}
+
+.slide-info-sql p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+    opacity: 0.9;
+}
+
+.carrusel-sql .slick-dots {
+    bottom: 15px;
+    z-index: 5;
+}
+
+.carrusel-sql .slick-dots li {
+    margin: 0 4px;
+}
+
+.carrusel-sql .slick-dots li button:before {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.carrusel-sql .slick-dots li button:hover:before {
+    color: #60a5fa;
+    opacity: 1;
+}
+
+@media screen and(max-width: 1200px) {
+    .slide-sql img {
+        height: 320px;
+        padding: 18px;
+    }
+
+    .slide-info-sql {
+        padding: 1.1rem;
+    }
+
+    .slide-info-sql h4 {
+        font-size: 1.05rem;
+    }
+
+    .slide-info-sql p {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and(max-width: 1024px) {
+    .carrusel-sql {
+        border-radius: 14px;
+    }
+
+    .slick-arrow {
+        width: 36px;
+        height: 36px;
+    }
+
+    .slick-arrow::before {
+        font-size: 18px;
+    }
+
+    .slick-prev {
+        left: 12px;
+    }
+
+    .slick-next {
+        right: 12px;
+    }
+
+    .slide-sql img {
+        height: 280px;
+        padding: 15px;
+    }
+
+    .slide-info-sql {
+        padding: 1rem;
+    }
+
+    .slide-info-sql h4 {
+        font-size: 1rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .slide-info-sql p {
+        font-size: 0.82rem;
+        line-height: 1.4;
+    }
+
+    .carrusel-sql .slick-dots {
+        bottom: 12px;
+    }
+}
+
+@media screen and(max-width: 768px) {
+    .carrusel-sql {
+        border-radius: 12px;
+        margin: 0 auto;
+        max-width: 95%;
+    }
+
+    .slick-arrow {
+        width: 32px;
+        height: 32px;
+        display: none;
+    }
+
+    .slide-sql img {
+        min-height: 180px;
+        padding: 12px;
+    }
+
+    .slide-sql:hover {
+        transform: translateY(-3px);
+    }
+
+    .slide-info-sql {
+        padding: 0.875rem;
+    }
+
+    .slide-info-sql h4 {
+        font-size: 0.95rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .slide-info-sql p {
+        font-size: 0.78rem;
+        line-height: 1.4;
+    }
+
+    .carrusel-sql .slick-dots li button::before {
+        font-size: 9px;
+    }
+
+    .carrusel-sql .slick-dots li.slick-active button::before {
+        font-size: 10px;
+    }
+}
+
+@media screen and(max-width: 576px) {
+    .carrusel-sql {
+        border-radius: 10px;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .slick-arrow {
+        display: none;
+    }
+
+    .slide-sql img {
+        height: 200px;
+        padding: 10px;
+    }
+
+    .slide-sql {
+        margin: 0 3px;
+    }
+
+    .slide-info-sql {
+        padding: 0.75rem;
+    }
+
+    .slide-info-sql h4 {
+        font-size: 0.9rem;
+    }
+
+    .slide-info-sql p {
+        font-size: 0.75rem;
+        line-height: 1.3;
+    }
+
+    .carrusel-sql .slick-dots {
+        bottom: 10px;
+    }
+
+    .carrusel-sql .slick-dots li {
+        margin: 0 3px;
+    }
+
+    .carrusel-sql .slick-dots li button::before {
+        font-size: 8px;
+    }
+}
+
+@media screen and(max-width: 480px) {
+    .slide-sql img {
+        height: 180px;
+        padding: 8px;
+    }
+
+    .slide-info-sql {
+        padding: 0.625rem;
+    }
+
+    .slide-info-sql h4 {
+        font-size: 0.85rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .slide-info-sql p {
+        font-size: 0.7rem;
+        line-height: 1.3;
+    }
+
+    .carrusel-sql .slick-dots {
+        bottom: 8px;
+    }
+
+    .carrusel-sql .slick-dots li button::before {
+        font-size: 7px;
+    }
+
+    .carrusel-sql .slick-dots li.slick-active button::after {
+        font-size: 8px;
+    }
+}
+
+@media screen and(max-width: 360px) {
+    .slide-sql img {
+        height: 160px;
+        padding: 6px;
+    }
+
+    .slide-info-sql {
+        padding: 0.5rem;
+    }
+
+    .slide-info-sql h4 {
+        font-size: 0.8rem;
+    }
+
+    .slide-info-sql p {
+        font-size: 0.65rem;
+    }
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+.slick-slide.slick-active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.carrusel-sql {
+    animation: fadeIn 0.6s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .slide-sql:hover,
+    .slide-sql img,
+    .slick-arrow,
+    .carrusel-sql {
+        transition: none;
+        animation: none;
+    }
+
+    .slide-sql:hover {
+        transform: none;
+    }
+
+    .slide-sql:hover img {
+        transform: none;
+    }
+}

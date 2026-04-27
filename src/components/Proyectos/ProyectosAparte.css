@@ -1,0 +1,466 @@
+.proyectos-section {
+    padding: 3rem 0;
+    background: transparent;
+    position: relative;
+}
+
+.proyectos-section h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.01rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.proyectos-section h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50px);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+    border-radius: 2px;
+}
+
+.documentos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.document-card {
+    background: linear-gradient(145deg,
+        rgba(30, 41, 59, 0.8) 0%,
+        rgba(15, 23, 42, 0.9) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1.75rem;
+    box-shadow: 
+        0 6px 25px rgba(0, 0, 0, 0.4),
+        0 1px 0 rgba(255, 255, 255, 0.05) inset;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.document-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+    transition: left 0.6s;
+}
+
+.document-card:hover::before {
+    left: 100%;
+}
+
+.document-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 
+        0 15px 35px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+}
+
+.document-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #f8fafc;
+    margin-bottom: 0.75rem;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.01rem;
+    line-height: 1.4;
+}
+
+.document-card p {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    font-family: "Inter", sans-serif;
+    min-height: 3.5rem;
+}
+
+.documento-acciones {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+}
+
+.documento-acciones button {
+    padding: 0.75rem 1.25rem;
+    background: rgba(59, 130, 246, 0.9);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Inter", sans-serif;
+    flex: 1;
+    min-width: 120px;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.documento-acciones button:hover {
+    background: rgba(59, 130, 246, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+.btn-descarga {
+    padding: 0.75rem 1.25rem;
+    background: rgba(16, 185, 129, 0.9);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex: 1;
+    min-width: 120px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+} 
+.btn-descarga:hover {
+    background: rgba(16, 185, 129, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 2px rgba(16, 185, 129, 0.4);
+    color: white;
+} 
+
+@media screen and(max-width: 1200px) {
+    .documentos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1.25rem;
+    }
+
+    .proyectos-section h2 {
+        font-size: 2rem;
+    }
+
+    .document-card {
+        padding: 1.5rem;
+    }
+
+    .document-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .document-card p {
+        font-size: 0.9rem;
+    }
+} 
+
+@media screen and(max-width: 1024px) {
+    .proyectos-section {
+        padding: 2.5rem 0;
+    }
+
+    .proyectos-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        padding-bottom: 0.75rem;
+    }
+
+    .proyectos-section h2::after {
+        width: 90px;
+        height: 2.5px;
+    }
+
+    .documentos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1.2rem;
+        padding: 0 0.5rem;
+    }
+
+    .document-card {
+        padding: 1.4rem;
+        border-radius: 14px;
+    }
+
+    .document-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .document-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .document-card p {
+        font-size: 0.88rem;
+        min-height: 3.2rem;
+    }
+
+    .documento-acciones button,
+    .btn-descarga {
+        padding: 0.7rem 1.1rem;
+        font-size: 0.85rem;
+        min-width: 110px;
+    }
+} 
+
+@media screen and(max-width: 768px) {
+    .proyectos-section {
+        padding: 2rem 0;
+    }
+
+    .proyectos-section h2 {
+        font-size: 1.7rem;
+        padding-bottom: 0.625rem;
+    }
+
+    .proyectos-section h2::after {
+        width: 80px;
+        height: 2px;
+    }
+
+    .documentos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .document-card {
+        padding: 1.25rem;
+        border-radius: 12px;
+    }
+
+    .document-card h3 {
+        font-size: 1.15rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .document-card p {
+        font-size: 0.85rem;
+        min-height: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .documento-acciones {
+        margin-top: 1.25rem;
+        gap: 0.625rem;
+    }
+
+    .documento-acciones button,
+    .btn-descarga {
+        padding: 0.65rem 1rem;
+        font-size: 0.82rem;
+        min-width: 100px;
+        border-radius: 8px;
+    }
+
+    .document-card::before {
+        display: none;
+    }
+} 
+
+@media screen and(max-width: 576px) {
+    .proyectos-section {
+        padding: 1.75rem 0;
+    }
+
+    .proyectos-section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .proyectos-section h2::after {
+        width: 70px;
+    }
+
+    .documentos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 0.9rem;
+    }
+
+    .document-card {
+        padding: 1.1rem;
+        border-radius: 10px;
+    }
+
+    .document-card:hover {
+        transform: translateY(-3px);
+    }
+
+    .document-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .document-card p {
+        font-size: 0.85rem;
+        min-height: 2.8rem;
+        line-height: 1.5;
+    }
+
+    .documento-acciones {
+        margin-top: 1rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .documento-acciones button,
+    .btn-descarga {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 0.8rem;
+        min-width: auto;
+        justify-content: center;
+    }
+} 
+
+@media screen and(max-width: 480px) {
+    .proyectos-section {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .proyectos-section h2 {
+        font-size: 1.4rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .proyectos-section h2::after {
+        width: 60px;
+        height: 1.5px;
+    }
+
+    .documentos-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        max-width: 320px;
+        margin: 1.5rem auto;
+    }
+
+    .document-card {
+        padding: 1rem;
+    }
+
+    .document-card h3 {
+        font-size: 1rem;
+    }
+
+    .document-card p {
+        font-size: 0.78rem;
+        min-height: 2.5rem;
+    }
+
+    .documento-acciones button,
+    .btn-descarga {
+        padding: 0.7rem;
+        font-size: 0.78rem;
+    }
+
+    .btn-descarga svg,
+    .btn-descarga i {
+        font-size: 0.9rem;
+    }
+} 
+
+@media screen and(max-width: 360px) {
+    .proyectos-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .documentos-grid {
+        max-width: 100%;
+        gap: 0.625rem;
+    }
+
+    .document-card {
+        padding: 0.875rem;
+    }
+
+    .document-card h3 {
+        font-size: 0.95rem;
+    }
+
+    .document-card p {
+        font-size: 0.75rem;
+    }
+
+    .documento-acciones button,
+    .btn-descarga {
+        padding: 0.625rem;
+        font-size: 0.75rem;
+    }
+} 
+
+.documento-acciones {
+    display: flex;
+} 
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
+.proyectos-section h2 {
+    animation: fadeInUp 0.6s ease-out;
+} 
+
+.document-card {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+} 
+
+.document-card:nth-child(1) {
+    animation-delay: 0.1s;
+} 
+
+.document-card:nth-child(2) {
+    animation-delay: 0.15s;
+} 
+
+.document-card:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.document-card:nth-child(4) {
+    animation-delay: 0.25s;
+}
+
+.document-card:nth-child(5) {
+    animation-delay: 0.3s;
+} 
+
+@media (prefers-reduced-motion: reduce) {
+    .proyectos-section h2,
+    .document-card,
+    .document-card:hover,
+    .documento-acciones button,
+    .btn-descarga {
+        animation: none;
+        transition: none;
+    }
+
+    .document-card::before {
+        display: none;
+    }
+}

@@ -1,0 +1,476 @@
+.estudios {
+    padding: 3rem 0;
+    background: transparent;
+    position: relative;
+}
+
+.estudios-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.estudio-titulo {
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.01rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.estudio-titulo::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50px);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+    border-radius: 2px;
+}
+
+.cerificaciones-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0.5rem;
+}
+
+.estudios-card {
+    background: linear-gradient(145deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.8) 100%);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.3),
+        0 1px 0 rgba(255, 255, 255, 0.05) inset;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+    min-height: 180px;
+}
+
+.estudios-card::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.4), rgba(139, 92, 246, 0.4));
+    border-radius: 17px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.estudios-card:hover::after {
+    opacity: 1;
+}
+
+.estudios-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 
+        0 15px 35px rgba(0, 0, 0, 0.4)
+        0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+}
+
+.estudios-card a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.estudio-imagen {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 12px;
+    padding: 0.5rem;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.estudios-card,
+.estudio-imagen {
+    transform: scale(1.1);
+    background: rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+.estudios-card h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0;
+    color: #f8fafc;
+    line-height: 1.4;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3rem;
+}
+
+.estudios-card > p {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    width: 100%;
+}
+
+@media screen and(max-width: 1200px) {
+    .estudios-container {
+        max-width: 95%;
+        padding: 0 1.25rem;
+    }
+
+    .cerificaciones-cards {
+        grid-template-columns: repeat(auto-fill minmax(300px, 1fr));
+        gap: 1.25rem;
+    }
+
+    .estudio-titulo {
+        font-size: 2rem;
+    }
+}
+
+@media screen and(max-width: 1024px) {
+    .estudios {
+        padding: 2.5rem 0;
+    }
+
+    .estudios-container {
+        max-width: 90%;
+        gap: 2.5rem;
+    }
+
+    .estudio-titulo {
+        font-size: 1.8rem;
+    }
+
+    .estudio-titulo::after {
+        width: 90px;
+    }
+
+    .cerificaciones-cards {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.2rem;
+    }
+
+    .estudios-card {
+        padding: 1.25rem;
+        min-height: 170px;
+        border-radius: 14px;
+    }
+
+    .estudio-imagen {
+        width: 55px;
+        height: 55px;
+    }
+
+    .estudios-card h3 {
+        font-size: 0.9rem;
+    }
+
+    .estudios-card > p {
+        font-size: 0.82rem;
+    }
+}
+
+@media screen and(max-width: 768px) {
+    .estudios {
+        padding: 2rem 0;
+    }
+
+    .estudios-container {
+        max-width: 100%;
+        padding: 0 1rem;
+        gap: 2rem;
+    }
+
+    .estudio-titulo {
+        font-size: 1.7rem;
+    }
+
+    .estudio-titulo::after {
+        width: 80px;
+        height: 2.5px;
+    }
+
+    .cerificaciones-cards {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+
+    .estudios-card {
+        padding: 1.1rem;
+        min-height: 160px;
+        border-radius: 12px;
+    }
+
+    .estudios-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .estudio-imagen {
+        width: 50px;
+        height: 50px;
+    }
+
+    .estudios-card h3 {
+        font-size: 0.85rem;
+        min-height: 2.8rem;
+    }
+
+    .estudios-card > p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and(max-width: 576px) {
+    .estudios {
+        padding: 1.75rem 0;
+    }
+
+    .estudios-container {
+        gap: 1.75rem;
+        padding: 0 0 0.75rem;
+    }
+
+    .estudio-titulo {
+        font-size: 1.6rem;
+        padding-bottom: 0.75rem;
+    }
+
+    .estudio-titulo::after {
+        width: 70px;
+        height: 2px;
+    }
+
+    .cerificaciones-cards {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 0.9rem;
+    }
+
+    .estudios-card {
+        padding: 1rem;
+        min-height: 150px;
+        border-radius: 10px;
+        gap: 0.75rem;
+    }
+
+    .estudio-imagen {
+        width: 45px;
+        height: 45px;
+        border-radius: 10px;
+    }
+
+    .estudios-card h3 {
+        font-size: 0.8rem;
+        min-height: 2.6rem;
+    }
+
+    .estudios-card > p {
+        font-size: 0.78rem;
+    }
+
+    .estudios-card::before {
+        display: none;
+    }
+}
+
+@media screen and(max-width: 480px) {
+    .estudios {
+        padding: 1.5rem 0;
+    }
+
+    .estudios-container {
+        gap: 1.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .estudio-titulo {
+        font-size: 1.4rem;
+        padding-bottom: 0.625rem;
+    }
+
+    .estudio-titulo::after {
+        width: 60px;
+    }
+
+    .cerificaciones-cards {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .estudios-card {
+        padding: 0.875rem;
+        min-height: 140px;
+        border-radius: 10px;
+    }
+
+    .estudio-imagen {
+        width: 42px;
+        height: 42px;
+    }
+
+    .estudios-card h3 {
+        font-size: 0.78rem;
+        min-height: 2.5rem;
+    }
+
+    .estudios-card > p {
+        font-size: 0.75rem;
+    }
+
+    .estudios-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 
+            0 10px 25px rgba(0, 0, 0, 0.3)
+            0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+    }
+}
+
+@media screen and(max-width: 360px) {
+    .estudios {
+        padding: 1.25rem 0;
+    }
+
+    .estudios-container {
+        gap: 1.25rem;
+    }
+
+    .estudio-titulo {
+        font-size: 1.3rem;
+    }
+
+    .estudio-titulo::after {
+        width: 50px;
+    }
+
+    .cerificaciones-cards {
+        gap: 0.7rem;
+    }
+
+    .estudios-card {
+        padding: 0.75rem;
+        min-height: 135px;
+    }
+
+    .estudio-imagen {
+        width: 40px;
+        height: 40px;
+    }
+
+    .estudios-card h3 {
+        font-size: 0.75rem;
+    }
+
+    .estudios-card > p {
+        font-size: 0.72rem;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.estudio-titulo {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.estudios-card {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.estudios-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.estudios-card:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.estudios-card:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.estudios-card:nth-child(4) {
+    animation-delay: 0.25s;
+}
+
+.estudios-card:nth-child(5) {
+    animation-delay: 0.3s;
+}
+
+.estudios-card:nth-child(6) {
+    animation-delay: 0.35s;
+}
+
+.estudios-card:nth-child(7) {
+    animation-delay: 0.4s;
+}
+
+.estudios-card:nth-child(8) {
+    animation-delay: 0.45s;
+}
+
+.estudios-card:nth-child(9) {
+    animation-delay: 0.5s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .estudio-titulo, 
+    .estudios-card,
+    .estudios-card:hover,
+    .estudio-imagen {
+        animation: none;
+        transition: none;
+    }
+}

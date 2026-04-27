@@ -1,0 +1,482 @@
+.contacto-section {
+    background: linear-gradient(145deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    color: white;
+    padding: 3rem 0;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contacto-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 15% 30%, rgba(59, 130, 246, 0.05) 1px, transparent 1px )
+        radial-gradient(circle at 85% 70%, rgba(139, 92, 246, 0.05) 1px, transparent 1px );
+    background-size: 60px 60px;
+    opacity: 0.4;
+}
+
+.contacto-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.contacto-titulo {
+    font-size: 1.8rem; 
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    display: inline-block;
+}
+
+.contacto-titulo::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent 0%, #3b82f6 50%, transparent 100%);
+    border-radius: 2px;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.contacto-card {
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(12px);
+    padding: 1.5rem;
+    border-radius: 16px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.contacto-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(139, 92, 246, 0.3), rgba(59, 130, 246, 0.3));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 00);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#fff 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.contacto-card:hover::after {
+    opacity: 1;
+}
+
+.contacto-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.7s;
+}
+
+.contacto-card:hover::before {
+    left: 100%;
+}
+
+.contacto-card:hover {
+    transform: translateY(-5px);
+    background: rgba(30, 41, 59, 0.8);
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 
+        0 12px 30px rgba(0, 0, 0, 0.25)
+        0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+}
+
+.contacto-icono {
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.contacto-icono img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease;
+}
+
+.contacto-card:hover .contacto-icono img {
+    transform: scale(1.1);
+}
+
+.contacto-info {
+    text-align: center;
+}
+
+.contacto-info h4 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    color: #f8fafc;
+}
+
+.contacto-info span {
+    opacity: 0.9;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #cbd5e1;
+}
+
+.contacto-card:nth-child(1) {
+    background: linear-gradient(135deg, rgba(220, 78, 65, 0.15) 0%, rgba(211, 72, 54, 0.1) 100%);
+    border-color: rgba(220, 78, 65, 0.25);
+}
+
+.contacto-card:nth-child(1):hover {
+    background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(30, 41, 59, 0.8));
+}
+
+.contacto-card:nth-child(2) {
+    background: linear-gradient(135deg, rgba(37, 211, 102, 0.15) 0%, rgba(37, 211, 102, 0.1) 100%);
+    border-color: rgba(37, 211, 102, 0.25);
+}
+
+.contacto-card:nth-child(2):hover {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(30, 41, 59, 0.8));
+}
+
+.contacto-card:nth-child(3) {
+    background: linear-gradient(135deg, rgba(10, 102, 194, 0.15) 100%, rgba(10, 102, 195, 0.1) 100%);
+    border-color: rgba(10, 102, 194, 0.25);
+}
+
+.contacto-card:nth-child(3):hover {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(30, 41, 59, 0.8));
+}
+
+.contacto-copyright {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.85rem;
+    opacity: 0.7;
+    font-family: "Inter", sans-serif;
+    cursor: default;
+}
+
+@media screen and(max-width: 1024px) {
+    .contacto-section {
+        padding: 2.5rem 0;
+    }
+
+    .contacto-container {
+        max-width: 90%;
+        padding: 0 1.25rem;
+    }
+
+    .contacto-titulo {
+        font-size: 2rem;
+    }
+
+    .contacto-titulo::after {
+        width: 70px;
+    }
+
+    .contacto-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.25rem;
+        margin-top: 2rem;
+    }
+
+    .contacto-card {
+        padding: 1.25rem;
+        min-height: 110px;
+        border-radius: 14px;
+    }
+
+    .contacto-icono img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .contacto-info h4 {
+        font-size: 1.05rem;
+    }
+
+    .contacto-info span {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and(max-width: 768px) {
+    .contacto-section {
+        padding: 2rem 0;
+    }
+
+    .contacto-container {
+        padding: 0 1rem;
+    }
+
+    .contacto-titulo {
+        font-size: 1.8rem;
+    }
+
+    .contacto-titulo::after {
+        width: 60px;
+        height: 2.5px;
+        bottom: -8px;
+    }
+
+    .contacto-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+        margin-top: 1.75rem;
+    }
+
+    .contacto-card {
+        padding: 1.1rem;
+        min-height: 105px;
+        border-radius: 12px;
+    }
+
+    .contacto-card:hover {
+        transform: translateY(-4px) scale(1.02);
+    }
+
+    .contacto-icono img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .contacto-info h4 {
+        font-size: 1rem;
+    }
+
+    .contacto-info span {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and(max-width: 576px) {
+    .contacto-section {
+        padding: 1.75rem 0;
+    }
+
+    .contacto-container {
+        padding: 0 0.75rem;
+    }
+
+    .contacto-titulo {
+        font-size: 1.6rem;
+    }
+
+    .contacto-titulo::after {
+        width: 50px;
+        height: 2px;
+        bottom: -6px;
+    }
+
+    .contacto-grid {
+        grid-template-columns: 1fr;
+        gap: 0.9rem;
+        margin-top: 1.5rem;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contacto-card {
+        padding: 1rem;
+        min-height: 100px;
+        border-radius: 12px;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+        text-align: left;
+    }
+
+    .contacto-card:hover {
+        transform: translateY(-3px);
+    }
+
+    .contacto-icono {
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    .contacto-icono img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .contacto-info {
+        text-align: left;
+    }
+
+    .contacto-info h4 {
+        font-size: 0.95rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .contacto-info span {
+        font-size: 0.78rem;
+    }
+
+    .contacto-card::before {
+        display: none;
+    }
+}
+
+@media screen and(max-width: 480px) {
+    .contacto-section {
+        padding: 1-5rem 0;
+    }
+
+    .contacto-titulo {
+        font-size: 1.4rem;
+    }
+
+    .contacto-titulo::after {
+        width: 40px;
+        bottom: -5px;
+    }
+
+    .contacto-grid {
+        gap: 0.75rem;
+        margin-top: 1.25rem;
+        max-width: 100%;
+    }
+
+    .contacto-card {
+        padding: 0.875rem;
+        min-height: 95px;
+        border-radius: 10px;
+        gap: 0.75rem;
+    }
+
+    .contacto-icono img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contacto-icono h4 {
+        font-size: 0.9rem;
+    }
+
+    .contacto-info span {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and(max-width: 360px) {
+    .contacto-titulo {
+        font-size: 1.3rem;
+    }
+
+    .contacto-card {
+        padding: 0.75rem;
+        min-height: 90px;
+        gap: 0.5rem;
+    }
+
+    .contacto-icono img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .contacto-info h4 {
+        font-size: 0.85rem;
+    }
+
+    .contacto-info span {
+        font-size: 0.7rem;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contacto-titulo {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.contacto-card {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.contacto-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.contacto-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.contacto-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.contacto-card:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 3px;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contacto-card,
+    .contacto-card:hover,
+    .contacto-titulo,
+    .contacto-icono img {
+        animation: none;
+        transition: none;
+    }
+
+    .contacto-card::before {
+        display: none;
+    }
+}

@@ -1,0 +1,292 @@
+.container-perfil {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.perfil {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 2.5rem 2rem;
+}
+
+.perfil-descripcion {
+    text-align: left;
+    line-height: 1.6;
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.perfil-descripcion:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 8px 30px rgba(0, 0, 0, 0.15)
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.perfil-descripcion p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "Inter", -apple-system, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+}
+
+.perfil-descripcion p:last-child {
+    margin-bottom: 0;
+}
+
+.perfil-descripcion strong {
+    color: #ffd700;
+    font-weight: 600;
+    background: linear-gradient(90deg, #ffd700, #ff3d4e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.tecnologias {
+    align-self: flex-start;
+    width: 100%;
+    max-width: 300px;
+}
+
+.button-habilidades {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.9) 0%, rgba(255, 200, 0, 0.8) 100%);
+    cursor: pointer;
+    border: none !important;
+    text-decoration: none !important;
+    padding: 14px 28px;
+    color: #1a1a1a;
+    border-radius: 12px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    margin: 0;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 0.02rem;
+    box-shadow: 
+        0 4px 15px rgba(255, 215, 0, 0.3)
+        inset 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.button-habilidades::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.2) 50%, transparent 70%);
+    transform: rotate(45deg);
+    transition: transform 0.6s;
+}
+
+.button-habilidades:hover::after {
+    transform: rotate(45deg) translate(20%, 20%);
+}
+
+.button-habilidades:focus {
+    outline: 2px solid #ffd700;
+    outline-offset: 3px;
+    box-shadow: 
+        0 0 0 4px rgba(255, 215, 0, 0.2)
+        0 4px 20px rgba(255, 215, 0, 0.4);
+}
+
+.button-habilidades:hover {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 1) 0%, rgba(255, 200, 0, 0.9) 100%);
+    transform: translateY(-5px);
+    box-shadow: 
+        0 8px 25px rgba(255, 215, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.button-habilidades:active {
+    transform: translateY(-2px);
+    transition: transform 0.1s;
+}
+
+@media screen and(max-width: 1024px) {
+    .container-perfil {
+        max-width: 90%;
+        padding: 0 1rem;
+    }
+
+    .perfil {
+        max-width: 700px;
+        padding: 2rem 1.5rem;
+        gap: 2rem;
+    }
+
+    .perfil-descripcion {
+        padding: 1.75rem;
+        border-radius: 18px;
+    }
+
+    .perfil-descripcion p {
+        font-size: 1.05rem;
+        line-height: 1.75;
+    }
+
+    .tecnologias {
+        max-width: 280px;
+    }
+
+    .button-habilidades {
+        padding: 13px 24px;
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and(max-width: 768px) {
+    .container-perfil {
+        padding: 0 1.5rem;
+        max-width: 100%;
+    }
+
+    .perfil {
+        padding: 1.5rem;
+        gap: 1.75rem;
+    }
+
+    .perfil-descripcion {
+        padding: 1.5rem;
+        border-radius: 16px;
+        backdrop-filter: blur(8px);
+    }
+
+    .perfil-descripcion p {
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 1.25rem;
+    }
+
+    .tecnologias {
+        max-width: 100%;
+        align-self: center;
+    }
+
+    .button-habilidades {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+        border-radius: 10px;
+    }
+}
+
+@media screen and(max-width: 576px) {
+    .container-perfil {
+        padding: 0 1rem;
+    }
+
+    .perfil {
+        padding: 1.25rem;
+        gap: 1.25rem;
+    }
+
+    .perfil-descripcion {
+        padding: 1.25rem;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .perfil-descripcion p {
+        font-size: 0.95rem;
+        line-height: 1.65;
+        margin-bottom: 1rem;
+    }
+
+    .button-habilidades {
+        padding: 11px 18px;
+        font-size: 0.9rem;
+        border-radius: 10px;
+    }
+
+    .button-habilidades:hover {
+        transform: translateY(-3px);
+    }
+}
+
+@media screen and(max-width: 480px) {
+    .container-perfil {
+        padding: 0 0.75rem;
+    }
+
+    .perfil {
+        padding: 1rem;
+        gap: 1.25rem;
+    }
+
+    .perfil-descripcion {
+        padding: 1rem;
+        border-radius: 12px;
+    }
+
+    .perfil-descripcion p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 0.875rem;
+    }
+
+    .button-habilidades {
+        padding: 10px 16px;
+        font-size: 0.875rem;
+    }
+
+    .button-habilidades::after {
+        display: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.perfil-descripcion {
+    animation: fadeInUp 0.6s ease-out 0.1s both;
+}
+
+.tecnologias {
+    animation: fadeInUp 0.6s ease-in 0.3s both;
+}
+
+.perfil > div:last-child {
+    width: 100%;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
