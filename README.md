@@ -19,21 +19,7 @@ Porfolio profesional que muestra mis habilidades como **Desarrollador full Stack
 - Navegación intuitiva con scroll suave
 - Secciones interactivas (carruseles)
 
-## Estructura del proyecto
-portfolio/
-├── public/ # Assets estáticos
-├── src/
-│ ├── components/ # Componentes React
-│ │ ├── Header/
-│ │ ├── Proyectos/
-│ │ ├── Certificaciones/
-│ │ └── Footer/
-│ ├── assets/ # Imágenes, iconos
-│ ├── styles/ # Archivos CSS
-│ └── App.js # Componente principal
-└── package.json
-
-## Secciones del protfolio
+## Secciones del porfolio
 
 ### 1. **Perfil profesional**
 - Presentación personal con foto
@@ -65,7 +51,6 @@ Si deseas ejecutar este proyecto localmente:
 
     ```bash
     git clone https://martinmatarrese.github.io/martin-matarrese/
-    cd martin-matarrese
     ```
 2. Instalar dependencias
 
@@ -83,7 +68,7 @@ Si deseas ejecutar este proyecto localmente:
     ```
 
 ## Diseño responsivo
-El portfolio esta optimizado para:
+El porfolio esta optimizado para:
 - **1200px** 
 - **1024px**
 - **768px**
