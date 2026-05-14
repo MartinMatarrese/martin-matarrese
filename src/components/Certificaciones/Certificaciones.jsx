@@ -40,11 +40,11 @@ export const Certificaciones = () => {
                         <p>Coderhause</p>
                     </div>
                     <div className="estudios-card">
-                        <a href="https://pub.coderhouse.com/certificates/fc76cfca-f32e-443b-95d8-2da792971dcd?v=1" target="_blank"><img src={coderhauseLogo} alt="Curso de Testing QA Manual" className="estudio-imagen"/><h3>Curso de Testing QA Manual</h3></a>
+                        <a href="https://pub.coderhouse.com/certificates/fc76cfca-f32e-443b-95d8-2da792971dcd?v=1" target="_blank" rel="noreferrer"><img src={coderhauseLogo} alt="Curso de Testing QA Manual" className="estudio-imagen"/><h3>Curso de Testing QA Manual</h3></a>
                         <p>Coderhause</p>
                     </div>
                     <div className="estudios-card">
-                        <a href="https://pub.coderhouse.com/certificates/77c84c72-496e-4d87-b50f-3074107517ea?v=1" target="_blank"><img src={coderhauseLogo} alt="Curso de AWS" className="estudio-imagen"/><h3>Curso de AWS</h3></a>
+                        <a href="https://pub.coderhouse.com/certificates/77c84c72-496e-4d87-b50f-3074107517ea?v=1" target="_blank" rel="noreferrer"><img src={coderhauseLogo} alt="Curso de AWS" className="estudio-imagen"/><h3>Curso de AWS</h3></a>
                         <p>Coderhause</p>
                     </div>
                 </div>
