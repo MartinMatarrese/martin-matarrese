@@ -10,11 +10,48 @@
 }
 
 .menu-enlaces {
+    position: relative;
     display: flex;
     gap: 0.8rem;
     padding: 10px;
     flex-wrap: wrap;
     justify-content: flex-end;
+}
+
+.menu-desplegable {
+    position: fixed;
+    top: auto;
+    right: 0;
+    /* background: #000000; */
+    /* border: 1px solid rgba(37, 99, 235, 0.3); */
+    background: transparent;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(37, 99, 235, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    z-index: 1000;
+    /* min-width: 180px; */
+    width: 70%;
+    backdrop-filter: blur(10px);
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+.menu-desplegable .secciones {
+    white-space: nowrap;
+    width: auto;
+    text-align: left;
+    background: transparent;
+    padding: 8px 12px;
+    
+}
+
+.menu-desplegable .secciones:hover {
+    transform: translateX(5px);
+    background: rgba(37, 99, 235, 0.1);
 }
 
 .secciones {
@@ -36,7 +73,7 @@
 }
 
 .secciones:hover {
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0,1) 0%, rgba(37, 99, 235, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(37, 99, 235, 0.05) 100%);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(37, 99, 235, 0.15);
     color: #1d4de8;
@@ -87,12 +124,13 @@
         flex-direction: column;
         gap: 0.5rem;
         padding: 0;
-        width: 100%;
+        width: 20%;
     }
 
     .secciones {
         width: 100%;
-        text-align: center;
+        /* text-align: center; */
+        text-align: left;
         padding: 10px 15px;
         font-size: 1rem;
         border-radius: 10px;
@@ -137,7 +175,7 @@
     }
 }
 
-@media screen and(max-width: 400px) {
+@media screen and (max-width: 400px) {
     .menu-enlaces {
         gap: 0.3rem;
     }
@@ -188,12 +226,69 @@
     margin-right: auto;
 }
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .menu-normal {
+        display: none;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
     .menu > :first-child {
         margin-right: 0;
         width: 100%;
         text-align: center;
         margin-bottom: 10px;
+    }
+
+    .menu-hamburgesa {
+        display: block;
+        background: transparent;
+        border: none;
+        padding: 8px;
+    }
+
+    .menu-image {
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: transparent;
+        filter: brightness(0) invert(1);
+    }
+
+    .menu-enlaces {
+        position: relative;
+        width: auto;
+        flex-direction: column;
+        justify-content: flex-end;
+    }    
+
+    .menu-desplegable {
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu-enlaces {
+        margin-bottom: auto;
+    }
+
+    .menu-desplegable {
+        position: relative;
+        right: 10px;
+        left: 10px;
+        min-width: auto;
+        margin-top: 10px;
+    }
+
+    .menu-desplegable .secciones {
+        text-align: center;
     }
 }
 

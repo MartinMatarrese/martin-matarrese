@@ -50,6 +50,7 @@
     letter-spacing: -0.01rem;
     position: relative;
     padding-bottom: 1rem;
+    margin-bottom: 20px;
 }
 
 .experiencia-titulo::after {
@@ -170,7 +171,7 @@
     font-size: 1.2rem;
 }
 
-@media screen and(max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .experiencia {
         max-width: 95%;
         margin-left: auto;
@@ -188,7 +189,7 @@
     }
 }
 
-@media screen and(max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .experiencia {
         max-width: 90%;
         padding: 1.75rem;
@@ -204,7 +205,6 @@
         font-size: 1.6rem;
         padding-right: 0;
         border-right: none;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
         padding-bottom: 1rem;
         justify-content: center;
         text-align: center;
@@ -229,7 +229,7 @@
     }
 }
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
     .experiencia {
         max-width: 100%;
         padding: 1.5rem;
@@ -275,7 +275,7 @@
     }
 }
 
-@media screen and(max-width: 576px) {
+@media screen and (max-width: 576px) {
     .experiencia {
         padding: 1.25rem;
         border-radius: 14px;
@@ -325,7 +325,7 @@
     }
 }
 
-@media screen and(max-width: 480px) {
+@media screen and (max-width: 480px) {
     .experiencia {
         padding: 1rem;
         border-radius: 12px;
@@ -364,7 +364,7 @@
     }
 }
 
-@media screen and(max-width: 360px) {
+@media screen and (max-width: 360px) {
     .experiencia {
         padding: 0.875rem;
         border-radius: 10px;

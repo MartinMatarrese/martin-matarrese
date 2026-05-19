@@ -18,9 +18,43 @@ export const Carrusel = () => {
         dots: true,
         infinite: true,
         speed: 500,
+        // slidesToShow: 1,
+        // slidesToScroll: 1,
+        // pauseOnHover: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         pauseOnHover: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        responsive: [
+            {
+                breackpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breackpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breackpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true
+                }
+            }
+        ]
     };
 
     const imagenes = [

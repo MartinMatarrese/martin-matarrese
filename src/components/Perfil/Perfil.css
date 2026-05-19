@@ -125,7 +125,7 @@
     transition: transform 0.1s;
 }
 
-@media screen and(max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .container-perfil {
         max-width: 90%;
         padding: 0 1rem;
@@ -157,19 +157,19 @@
     }
 }
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
     .container-perfil {
-        padding: 0 1.5rem;
+        padding: 0 1rem;
         max-width: 100%;
     }
 
     .perfil {
-        padding: 1.5rem;
+        padding: 1rem;
         gap: 1.75rem;
     }
 
     .perfil-descripcion {
-        padding: 1.5rem;
+        padding: 1rem;
         border-radius: 16px;
         backdrop-filter: blur(8px);
     }
@@ -192,7 +192,7 @@
     }
 }
 
-@media screen and(max-width: 576px) {
+@media screen and (max-width: 576px) {
     .container-perfil {
         padding: 0 1rem;
     }
@@ -225,7 +225,7 @@
     }
 }
 
-@media screen and(max-width: 480px) {
+@media screen and (max-width: 480px) {
     .container-perfil {
         padding: 0 0.75rem;
     }

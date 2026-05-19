@@ -15,7 +15,7 @@ export const Footer = () => {
                             <img src={gmail} alt="Emial"/>
                         </div>
                         <div className="contacto-info">
-                            <h4>Email</h4>
+                            <h4>Gmail</h4>
                             <span>matarresemartin@gmail.com</span>
                         </div>
                     </a>

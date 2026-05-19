@@ -605,7 +605,7 @@
     border-color: rgba(255, 255, 255, 0.2);
 }
 
-@media screen and(max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .container {
         max-width: 95%;
         padding: 0 1.25rem;
@@ -624,7 +624,7 @@
     }
 }
 
-@media screen and(max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .proyectos {
         padding: 2.5rem 0;
     }
@@ -682,7 +682,7 @@
     }
 }
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
     .proyectos {
         padding: 2rem 0;
     }
@@ -729,8 +729,9 @@
         height: 180px;
     }
 
-    .proyecti-imagenes.sql {
-        min-height: 180px;
+    .proyecto-imagenes.sql {
+        min-height: auto;
+        width: 100%;
     }
 
     .proyecto-titulo {
@@ -799,7 +800,7 @@
     }
 }
 
-@media screen and(max-width: 576px) {
+@media screen and (max-width: 576px) {
     .proyectos {
         padding: 1.75rem 0;
     }
@@ -913,7 +914,7 @@
     }
 }
 
-@media screen and(max-width: 480px) {
+@media screen and (max-width: 480px) {
     .proyectos {
         padding: 1.5rem 0;
     }
@@ -955,7 +956,7 @@
         border-radius: 10px;
     }
 
-    .proyecti-imagenes.sql {
+    .proyecto-imagenes.sql {
         min-height: 140px;
     }
 
@@ -1004,7 +1005,7 @@
     }
 }
 
-@media screen and(max-width: 360px) {
+@media screen and (max-width: 360px) {
     .seccion-titulo {
         font-size: 1.3rem;
     }
