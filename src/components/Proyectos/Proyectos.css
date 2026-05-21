@@ -309,8 +309,8 @@
 }
 
 .sql-tecnologias {
-    width: auto;
-    min-width: 100px;
+    width: 30%;
+    /* min-width: 100px; */
 }
 
 .proyecto-enlaces {
@@ -383,7 +383,7 @@
 .tecnologia-item {
     display: flex;
     align-items: center;
-    width: 100px;
+    width: 100%;
     gap: 0.75rem;
     padding: 0.75rem 1rem;
     margin-top: 0.5rem;
@@ -394,6 +394,7 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: default;
+    width: 60%;
 }
 
 .tecnologia-item:hover {
@@ -500,7 +501,7 @@
 .enlace-item {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 30%;
     margin-top: 0.5rem;
     border-radius: 12px;
     background: transparent;

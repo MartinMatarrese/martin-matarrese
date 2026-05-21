@@ -143,7 +143,7 @@ export const Proyectos = () => {
                                     <div className="doggle">
                                         <div className="btn-caracteristicas" ref={caracteristicasRef}>
                                             <button className="btn-caracteristica" onClick={toggleCaracteristicas}>
-                                                Carácteristicas
+                                                Carácteristicas del Backend
                                             </button>
                                         </div>
                                         {caracteristicasOpen && (
@@ -248,7 +248,7 @@ export const Proyectos = () => {
                                                     </a>
                                                 </div>
                                                 <div className="enlace-item" data-tech="swagger">
-                                                    <a href="https://tiendaderopadeportiva-production.up.railway.app/docs/" target="_blank" rel="noreferrer" className="btn-outline">
+                                                    <a href="https://tiendaderopadeportiva.onrender.com/docs/" target="_blank" rel="noreferrer" className="btn-outline">
                                                         <img src={swagger} alt="Swagger"/>
                                                         <span>API Docs</span>
                                                     </a>

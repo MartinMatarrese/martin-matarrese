@@ -27,7 +27,7 @@ export const Perfil = () => {
             <div className="perfil">
                 <div className="perfil-descripcion">
                     <p>Como Desarrollador Web  Full Stack, trabajo en el ciclo completo de desarrollo de aplicaciones web. Uso <small>React.js</small> para construir interfaces rápidas, adaptables a culquier dispositivo y <small>Node.js</small> para crear backends escalables. Antes de entregar el código aplico prácticas de <small>Testing QA Manual</small> que aseguran productos estables y confiables.</p>
-                    <p>Complemento mi trabajo con conocimientos en <small>Cloud computin (AWS)</small>, lo que me permite pensar en despliegues, escalabilidad y entornos productivos desde la fase del diseño.</p>
+                    <p>Complemento mi trabajo con conocimientos en <small>Cloud Computing (AWS)</small>, lo que me permite pensar en despliegues, escalabilidad y entornos productivos desde la fase del diseño.</p>
                 </div>
                 <div className="tecnologias" ref={dropdownRef}>
                     <button className="button-habilidades"onClick={toggleDropdown}>

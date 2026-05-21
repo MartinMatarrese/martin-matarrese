@@ -16,6 +16,7 @@ import jwt from "../../image/jsonwebtokens.svg";
 import docker from "../../image/docker.svg";
 import swagger from "../../image/swagger.svg";
 import sql from "../../image/mysql.svg";
+import aws from "../../image/aws_light.svg";
 import "./Habilidades.css";
 
 export const Habilidades = () => {
@@ -92,6 +93,10 @@ export const Habilidades = () => {
             <div className="habilidad-item" data-tech="sql">
                 <img src={sql} alt="sql"/>
                 <p><strong>MySQL</strong></p>
+            </div>
+            <div className="habilidad-item" data-tech="aws">
+                <img src={aws} alt="aws" />
+                <p><strong>AWS</strong></p>
             </div>
         </div>
     )

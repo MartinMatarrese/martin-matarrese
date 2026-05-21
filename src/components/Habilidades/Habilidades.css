@@ -215,6 +215,11 @@
     color: white;
 }
 
+.habilidad-item[data-tech="aws"] {
+    background: linear-gradient(135deg, #2496ED 0%, #1f85d8 100%);
+    color: white;
+}
+
 .habilidad-item[data-tech="javaScript"] p,
 .habilidad-item[data-tech="react"] p,
 .habilidad-item[data-tech="passport"] p {
