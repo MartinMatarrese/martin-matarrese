@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/martin-matarrese/static/css/main.6b278b2b.css",
-    "main.js": "/martin-matarrese/static/js/main.70655011.js",
+    "main.css": "/martin-matarrese/static/css/main.59b24fee.css",
+    "main.js": "/martin-matarrese/static/js/main.067a51d1.js",
     "static/media/funcion 1.png": "/martin-matarrese/static/media/funcion 1.7d2af13e9e035996c9a1.png",
     "static/media/tiendaderopadeportivaprincipal.png": "/martin-matarrese/static/media/tiendaderopadeportivaprincipal.9a06d5af9072ef448e11.png",
     "static/media/ESTRES - MATARRESE.pdf": "/martin-matarrese/static/media/ESTRES - MATARRESE.0bac105833218c6ed794.pdf",
@@ -49,11 +49,11 @@
     "static/media/x (1).svg": "/martin-matarrese/static/media/x (1).8a96217de6ece9399335a88273932ef7.svg",
     "static/media/css3.svg": "/martin-matarrese/static/media/css3.1323e04024709c8a25e60cd9db22db48.svg",
     "static/media/html5.svg": "/martin-matarrese/static/media/html5.8e6289ed1eb0b9f348a463db8fa3e38c.svg",
-    "main.6b278b2b.css.map": "/martin-matarrese/static/css/main.6b278b2b.css.map",
-    "main.70655011.js.map": "/martin-matarrese/static/js/main.70655011.js.map"
+    "main.59b24fee.css.map": "/martin-matarrese/static/css/main.59b24fee.css.map",
+    "main.067a51d1.js.map": "/martin-matarrese/static/js/main.067a51d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b278b2b.css",
-    "static/js/main.70655011.js"
+    "static/css/main.59b24fee.css",
+    "static/js/main.067a51d1.js"
   ]
 }
