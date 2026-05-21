@@ -108,7 +108,7 @@ export const Proyectos = () => {
                                             </button>
                                         </div>
                                         {enlacesProyecto1Open && (
-                                            <div className="proyecto-enlaces">
+                                            <div className="proyecto-enlaces" ref={enlacesProyecto1Ref}>
                                                 <div className="enlace-item" data-tech="github">
                                                     <a href="https://github.com/MartinMatarrese/HARRY-POTTER-FAN" target="_blank" rel="noreferrer" className="btn-outline">
                                                         <img src={gitHub} alt="GitHub"/>
@@ -234,9 +234,15 @@ export const Proyectos = () => {
                                             </button>
                                         </div>
                                         {enlacesProyecto2Open && (
-                                            <div className="proyecto-enlaces">
+                                            <div className="proyecto-enlaces" ref={enlacesProyecto2Ref}>
                                                 <div className="enlace-item" data-tech="github">
                                                     <a href="https://github.com/MartinMatarrese/tiendaderopadeportiva" target="_blank" rel="noreferrer" className="btn-outline">
+                                                        <img src={gitHub} alt="GitHub"/>
+                                                        <span>Código</span>
+                                                    </a>
+                                                </div>
+                                                <div className="enlace-item" data-tech="github">
+                                                    <a href="https://github.com/MartinMatarrese/tiendaderopadeportiva/tree/main/frontend" target="_blank" rel="noreferrer" className="btn-outline">
                                                         <img src={gitHub} alt="GitHub"/>
                                                         <span>código Frontend</span>
                                                     </a>
@@ -299,7 +305,7 @@ export const Proyectos = () => {
                                         </button>
                                     </div>
                                     {enlacesProyecto3Open && (
-                                        <div className="proyecto-enlaces">
+                                        <div className="proyecto-enlaces" ref={enlacesProyecto3Ref}>
                                             <div className="enlace-item" data-tech="github">
                                                 <a href="https://github.com/MartinMatarrese/sistemadegestiondetiendaonline" target="_blank" rel="noreferrer" className="btn btn-outline">
                                                     <img src={gitHub} alt="GitHub"/>
