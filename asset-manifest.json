@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/martin-matarrese/static/css/main.59b24fee.css",
-    "main.js": "/martin-matarrese/static/js/main.067a51d1.js",
+    "main.css": "/martin-matarrese/static/css/main.72018fef.css",
+    "main.js": "/martin-matarrese/static/js/main.6d0a7f9d.js",
     "static/media/funcion 1.png": "/martin-matarrese/static/media/funcion 1.7d2af13e9e035996c9a1.png",
     "static/media/tiendaderopadeportivaprincipal.png": "/martin-matarrese/static/media/tiendaderopadeportivaprincipal.9a06d5af9072ef448e11.png",
     "static/media/ESTRES - MATARRESE.pdf": "/martin-matarrese/static/media/ESTRES - MATARRESE.0bac105833218c6ed794.pdf",
@@ -22,6 +22,7 @@
     "static/media/view_products.png": "/martin-matarrese/static/media/view_products.b3fd80db36d305f9f64a.png",
     "static/media/view_product_reviews.png": "/martin-matarrese/static/media/view_product_reviews.5f5c9acdc05241022a20.png",
     "static/media/Digital_Glyph_Green.png": "/martin-matarrese/static/media/Digital_Glyph_Green.58ef144f45421158e44d.png",
+    "static/media/mercadopago.svg": "/martin-matarrese/static/media/mercadopago.522b58cae707ae1ccfc6c5023613aec1.svg",
     "static/media/mysql.svg": "/martin-matarrese/static/media/mysql.1957fab3610b78c02010dab864c2d6b8.svg",
     "static/media/react.svg": "/martin-matarrese/static/media/react.8e63d418a6421cc2662e234ac8af7313.svg",
     "static/media/mongoose.svg": "/martin-matarrese/static/media/mongoose.d9979af05f091a81e769c652b1481373.svg",
@@ -40,20 +41,20 @@
     "static/media/bootstrap.svg": "/martin-matarrese/static/media/bootstrap.d866407afc375025b806f076d7362cb8.svg",
     "static/media/github.svg": "/martin-matarrese/static/media/github.3b21c250a99986431958daaa9246a45a.svg",
     "static/media/express.svg": "/martin-matarrese/static/media/express.8427b1f17000eb9ee0790216d726b635.svg",
-    "static/media/railway.svg": "/martin-matarrese/static/media/railway.3982fe94cb5d4258e1b16e547e1e7ca2.svg",
     "static/media/git.svg": "/martin-matarrese/static/media/git.8ecdc3c556e1278611a7cfbb49c857a2.svg",
     "static/media/jsonwebtokens.svg": "/martin-matarrese/static/media/jsonwebtokens.854e2388ccfe92ba3ec82402dd813829.svg",
     "static/media/mongodb.svg": "/martin-matarrese/static/media/mongodb.d930c2c4198d1000c2fb8b7d3177a44c.svg",
+    "static/media/render.svg": "/martin-matarrese/static/media/render.74265a65189fac3d8a576754b48801fd.svg",
     "static/media/passport.svg": "/martin-matarrese/static/media/passport.f407cebba6e49eee655964f24199c4a4.svg",
     "static/media/list.svg": "/martin-matarrese/static/media/list.1320df01975afb9d39dd1adebbeaf324.svg",
     "static/media/x (1).svg": "/martin-matarrese/static/media/x (1).8a96217de6ece9399335a88273932ef7.svg",
     "static/media/css3.svg": "/martin-matarrese/static/media/css3.1323e04024709c8a25e60cd9db22db48.svg",
     "static/media/html5.svg": "/martin-matarrese/static/media/html5.8e6289ed1eb0b9f348a463db8fa3e38c.svg",
-    "main.59b24fee.css.map": "/martin-matarrese/static/css/main.59b24fee.css.map",
-    "main.067a51d1.js.map": "/martin-matarrese/static/js/main.067a51d1.js.map"
+    "main.72018fef.css.map": "/martin-matarrese/static/css/main.72018fef.css.map",
+    "main.6d0a7f9d.js.map": "/martin-matarrese/static/js/main.6d0a7f9d.js.map"
   },
   "entrypoints": [
-    "static/css/main.59b24fee.css",
-    "static/js/main.067a51d1.js"
+    "static/css/main.72018fef.css",
+    "static/js/main.6d0a7f9d.js"
   ]
 }
