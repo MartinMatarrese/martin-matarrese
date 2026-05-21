@@ -13,8 +13,9 @@ import jwt from "../../image/jsonwebtokens.svg";
 import passport from "../../image/passport.svg";
 import react from "../../image/react.svg";
 import swagger from "../../image/swagger.svg";
-import railway from "../../image/railway.svg";
+import render from "./image/render.svg";
 import docker from "../../image/docker.svg";
+import mercadopago from "../../image/mercadopago.svg";
 import sql from "../../image/mysql.svg";
 import "./Proyectos.css";
 import { Carrusel } from "../Carrusel/Carrusel";
@@ -156,7 +157,7 @@ export const Proyectos = () => {
                                                     <li> Documentación con Swagger</li>
                                                     <li> Testing con Jest</li>
                                                     <li> Contenedor con Docker</li>
-                                                    <li> Deployment con Railway</li>
+                                                    <li> Deployment con Render</li>
                                                 </ul>
                                             </div>
                                         )}
@@ -213,9 +214,9 @@ export const Proyectos = () => {
                                                         <img src={swagger} alt="Swagger"/>
                                                         <span>Swagger</span>
                                                     </div>
-                                                    <div className="tecnologia-item" data-tech="railway">
-                                                        <img src={railway} alt="Railway"/>
-                                                        <span>Railway</span>
+                                                    <div className="tecnologia-item" data-tech="render">
+                                                        <img src={render} alt="Render"/>
+                                                        <span>Render</span>
                                                     </div>
                                                     <div className="tecnologia-item" data-tech="github">
                                                         <img src={gitHub} alt="GitHub"/>
@@ -224,6 +225,10 @@ export const Proyectos = () => {
                                                     <div className="tecnologia-item" data-tech="docker">
                                                         <img src={docker} alt="docker"/>
                                                         <span>Dcoker</span>
+                                                    </div>
+                                                    <div className="tecnologia-item" data-tech="MP">
+                                                        <img src={mercadopago} alt="mercadopago"/>
+                                                        <span>Mercado Pago</span>
                                                     </div>
                                                 </div>
                                             </div>
