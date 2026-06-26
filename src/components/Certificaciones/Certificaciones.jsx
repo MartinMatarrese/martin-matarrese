@@ -47,6 +47,10 @@ export const Certificaciones = () => {
                         <a href="https://pub.coderhouse.com/certificates/77c84c72-496e-4d87-b50f-3074107517ea?v=1" target="_blank" rel="noreferrer"><img src={coderhauseLogo} alt="Curso de AWS" className="estudio-imagen"/><h3>Curso de AWS (Noviembre 2025-Marzo 2026)</h3></a>
                         <p>Coderhause</p>
                     </div>
+                    <div className="estudios-card">
+                        <a href="https://pub.coderhouse.com/legacy-certificates/6a3950c6fedf991c70d51e4a" target="_blank" rel="noreferrer"><img src={coderhauseLogo} alt="Desarrollador web Full Stack" className="estudio-imagen"/><h3>Carrera de Desarrollador Web Full Stack (Novimbre 2023-marzo 2026)</h3></a>
+                        <p>Coderhause</p>
+                    </div>
                 </div>
             </div>
         </section>
