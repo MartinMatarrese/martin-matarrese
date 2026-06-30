@@ -10,13 +10,13 @@ export const Footer = () => {
             <div className="contacto-container">
                 <h2 className="contacto-titulo">📞 Contacto</h2>
                 <div className="contacto-grid">
-                    <a href="maito:matarresemartin@gmail.com" target="_blank" rel="noreferrer" className="contacto-card">
+                    <a href="maito:martinmatarrese1@gmail.com" target="_blank" rel="noreferrer" className="contacto-card">
                         <div className="contacto-icono">
                             <img src={gmail} alt="Emial"/>
                         </div>
                         <div className="contacto-info">
                             <h4>Gmail</h4>
-                            <span>matarresemartin@gmail.com</span>
+                            <span>martinmatarrese1@gmail.com</span>
                         </div>
                     </a>
                     <a href="https://wa.me/5491156672350" target="_blank" rel="noreferrer" className="contacto-card">
