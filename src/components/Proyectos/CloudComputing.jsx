@@ -18,9 +18,9 @@ export const CloudComputing = () => {
 
     return (
         <section className="proyectos-section">
-            <h2>Documentación del proyecto en Cloud Computing (AWS)</h2>
+            {/* <h2>Documentación del proyecto en Cloud Computing (AWS)</h2> */}
 
-            <div className="documentos-grid">
+            {/* <div className="documentos-grid">
                 {documento.map(doc =>(
                     <div key={doc.id} className="document-card">
                         <h3>{doc.titulo}</h3>
@@ -43,7 +43,38 @@ export const CloudComputing = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+            </div> */}
+            <table className="tabla">
+                {/* <thead className="filas">
+                    <tr>
+                        <th className="columnas nombres">Archivos</th>
+                        <th className="columnas nombres">Descargar</th>
+                    </tr>
+                </thead> */}
+                {documento.map(doc => (
+                    <tbody className="filas">
+                    <tr>
+                        <th className="columnas">
+                            <button
+                            onClick={() => window.open(doc.archivo, "_blank")}
+                            >
+                                {doc.titulo}
+                            </button>
+                        </th>
+                        <th className="columnas">
+                            <a 
+                                href={`${doc.archivo}`}
+                                download={doc.titulo}
+                                className="btn-descarga"
+                            >
+                               {/* <img src={doc.icono} alt="descarga"/> */}
+                               ⬇️
+                            </a>
+                        </th>
+                    </tr>
+                </tbody>
+                ))}
+            </table>
         </section>
     )
 }

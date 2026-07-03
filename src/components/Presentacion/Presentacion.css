@@ -28,18 +28,27 @@
 }
 
 .presentacion-imagen:hover {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
     border-color: rgba(255, 255, 255, 0.5);
 }
 
+.nombre {
+    text-decoration: none;
+}
+
 .presentacion-nombre {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.85);
     margin: 0;
     line-height: 1.2;
     white-space: nowrap;
     font-family: "Inter", sans-serif;
+    text-decoration: none;
+}
+
+.presentacion-nombre:hover {
+    color: rgba(255, 255, 255, 0.557);
 }
 
 .presentacion-titulo {

@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import diagrama from "./image/diagrama_tienda_fondo_negro.png";
+// import diagrama from "./image/diagrama_tienda_fondo_negro.png";
 import funcion1 from "./image/funcion 1.png";
 import funcion2 from "./image/funcion 2.png";
 import procedimiento from "./image/procedimiento.png";
@@ -59,7 +59,7 @@ export const Carrusel = () => {
 
     const imagenes = [
         { 
-            imagen: diagrama,
+            // imagen: diagrama,
             titulo: "Diagrama de base de datos",
             descripcion: "Estructura completa de tablas y relaciones"
         },

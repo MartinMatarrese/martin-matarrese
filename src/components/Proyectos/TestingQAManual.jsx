@@ -5,17 +5,20 @@ import bugs from "./Documentos/Bugs.pdf";
 import casosDePrueba from "./Documentos/Casos de prueba.pdf";
 import estres from "./Documentos/ESTRES - MATARRESE.pdf";
 import reporteDePruebas from "./Documentos/REPORTE DE PRUEBAS.pdf";
+import web from "./image/globe.svg";
+import descargar from "./image/arrow-down-circle-fill.svg";
 import "./ProyectosAparte.css";
 
 export const TestingQAManual = () => {
     const documentos = [
         {
             id: 1,
-            titulo: "Reporte de bugs",
+            titulo: "Reporte de Bugs",
             descripcion: "3 bugs reportados con diferentes niveles de seriedad",
             archivo: bugs,
             tipo: "pdf",
-            icono: <FontAwesomeIcon icon={faFilePdf} style={{color: "#e74c3c"}}/>
+            // icono: <FontAwesomeIcon icon={faFilePdf} style={{color: "#e74c3c"}}/>
+            icono: "⬇️"
         },
 
         {
@@ -57,9 +60,9 @@ export const TestingQAManual = () => {
 
     return (
         <section className="proyectos-section">
-            <h2>Documentación del proyecto QA</h2>
+            {/* <h2>Documentación del proyecto QA</h2> */}
 
-            <div className="documentos-grid">
+            {/* <div className="documentos-grid">
                 {documentos.map(doc => (
                     <div key={doc.id} className="document-card">
                         <h3>{doc.titulo}</h3>
@@ -82,7 +85,38 @@ export const TestingQAManual = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+            // </div> */}
+            <table className="tabla">
+                {/* <thead className="filas">
+                    <tr>
+                        <th className="columnas nombres">Archivos</th>
+                        <th className="columnas nombres">Descargar</th>
+                    </tr>
+                </thead> */}
+                {documentos.map(doc => (
+                    <tbody className="filas">
+                    <tr>
+                        <th className="columnas">
+                            <button
+                            onClick={() => window.open(doc.archivo, "_blank")}
+                            >
+                                {doc.titulo}
+                            </button>
+                        </th>
+                        <th className="columnas">
+                            <a 
+                                href={`${doc.archivo}`}
+                                download={doc.titulo}
+                                className="btn-descarga"
+                            >
+                               {/* <img src={doc.icono} alt="descarga"/> */}
+                               ⬇️
+                            </a>
+                        </th>
+                    </tr>
+                </tbody>
+                ))}
+            </table>
         </section>
     )
 }

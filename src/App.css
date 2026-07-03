@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --bs-font-sans-serif: "Inter", sans-serif !important;
+    --bs-body-font-family: "Inter", sans-serif !important;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+    /* font-family: "Inter", "Segoe UI", system-ui, sans-serif !important; */
+    /* font-family: "Inter", sans-serif !important; */
     line-height: 1.6;
     color: var(--text-dark);
+    /* background-color: rgb(70, 70, 142); */
     background-color: black;
 }

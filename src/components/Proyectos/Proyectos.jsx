@@ -1,68 +1,71 @@
 import harryPotter from "./image/harry potter.png";
 import tiendaDeRopaDeportiva from "./image/tiendaderopadeportivaprincipal.png";
-import html from "../../image/html5.svg";
-import css from "../../image/css3.svg";
-import bootstrap from "../../image/bootstrap.svg";
-import sass from "../../image/sass.svg";
-import gitHub from "../../image/github.svg";
-import node from "../../image/nodedotjs.svg";
-import express from "../../image/express.svg";
-import mongoDB from "../../image/mongodb.svg";
-import mongoose from "../../image/mongoose.svg";
-import jwt from "../../image/jsonwebtokens.svg";
-import passport from "../../image/passport.svg";
-import react from "../../image/react.svg";
-import swagger from "../../image/swagger.svg";
-import render from "./image/render.svg";
-import docker from "../../image/docker.svg";
-import mercadopago from "../../image/mercadopago.svg";
-import sql from "../../image/mysql.svg";
+import diagrama from "./image/diagrama_tienda_fondo_negro.png";
+import testing from "./image/Captura de pantalla (124).png";
+import aws from "./image/Captura de pantalla (126).png"
+// import html from "../../image/html5.svg";
+// import css from "../../image/css3.svg";
+// import bootstrap from "../../image/bootstrap.svg";
+// import sass from "../../image/sass.svg";
+// import gitHub from "../../image/github.svg";
+// import node from "../../image/nodedotjs.svg";
+// import express from "../../image/express.svg";
+// import mongoDB from "../../image/mongodb.svg";
+// import mongoose from "../../image/mongoose.svg";
+// import jwt from "../../image/jsonwebtokens.svg";
+// import passport from "../../image/passport.svg";
+// import react from "../../image/react.svg";
+// import swagger from "../../image/swagger.svg";
+// import render from "./image/render.svg";
+// import docker from "../../image/docker.svg";
+// import mercadopago from "../../image/mercadopago.svg";
+// import sql from "../../image/mysql.svg";
 import "./Proyectos.css";
-import { Carrusel } from "../Carrusel/Carrusel";
-import { useEffect, useRef, useState } from "react";
+// import { Carrusel } from "../Carrusel/Carrusel";
+// import { useEffect, useRef, useState } from "react";
 import { TestingQAManual } from "./TestingQAManual";
 import { CloudComputing } from "./CloudComputing";
 
-const useDropdown = () => {
-    const [ isOpen, setIsOpen ] = useState(false);
-    const ref = useRef(null);
+// const useDropdown = () => {
+//     const [ isOpen, setIsOpen ] = useState(false);
+//     const ref = useRef(null);
 
-    useEffect(() => {
-        const handleClick = (e) => {
-            if(ref.current && !ref.current.contains(e.target)) {
-                setIsOpen(false);
-            };
-        };
-        document.addEventListener("mousedown", handleClick);
-        return () => {
-            document.removeEventListener("mousedown", handleClick);
-        };
-    }, []);
+//     useEffect(() => {
+//         const handleClick = (e) => {
+//             if(ref.current && !ref.current.contains(e.target)) {
+//                 setIsOpen(false);
+//             };
+//         };
+//         document.addEventListener("mousedown", handleClick);
+//         return () => {
+//             document.removeEventListener("mousedown", handleClick);
+//         };
+//     }, []);
 
-    const toggle = () => setIsOpen(!isOpen);
+//     const toggle = () => setIsOpen(!isOpen);
 
-    return [isOpen, ref, toggle];
-};
+//     return [isOpen, ref, toggle];
+// };
 
 export const Proyectos = () => {
-    const [ proyecto1Open, proyecto1Ref, toggleProyecto1 ] = useDropdown();
-    const [ proyecto2Open, proyecto2Ref, toggleProyecto2 ] = useDropdown();
-    const [ proyecto3Open, proyecto3Ref, toggleProyecto3 ] = useDropdown();
-    const [ proyecto4Open, proyecto4Ref, toggleProyecto4 ] = useDropdown();
-    const [ proyecto5Open, proyecto5Ref, toggleProyecto5 ] = useDropdown();
-    const [ tecnologiasProyecto1Open, tecnologiasProyecto1Ref, toggleTeconologiasProyecto1 ] = useDropdown();
-    const [ enlacesProyecto1Open, enlacesProyecto1Ref, toggleEnlacesProyecto1 ] = useDropdown();
-    const [ tecnologiasProyecto2Open, tecnologiasProyecto2Ref, toggleTeconologiasProyecto2 ] = useDropdown();
-    const [ enlacesProyecto2Open, enlacesProyecto2Ref, toggleEnlacesProyecto2 ] = useDropdown()
-    const [ tecnologiasProyecto3Open, tecnologiasProyecto3Ref, toggleTeconologiasProyecto3 ] = useDropdown();
-    const [ enlacesProyecto3Open, enlacesProyecto3Ref, toggleEnlacesProyecto3 ] = useDropdown();
-    const [ caracteristicasOpen, caracteristicasRef, toggleCaracteristicas ] = useDropdown();
+    // const [ proyecto1Open, proyecto1Ref, toggleProyecto1 ] = useDropdown();
+    // const [ proyecto2Open, proyecto2Ref, toggleProyecto2 ] = useDropdown();
+    // const [ proyecto3Open, proyecto3Ref, toggleProyecto3 ] = useDropdown();
+    // const [ proyecto4Open, proyecto4Ref, toggleProyecto4 ] = useDropdown();
+    // const [ proyecto5Open, proyecto5Ref, toggleProyecto5 ] = useDropdown();
+    // const [ tecnologiasProyecto1Open, tecnologiasProyecto1Ref, toggleTeconologiasProyecto1 ] = useDropdown();
+    // const [ enlacesProyecto1Open, enlacesProyecto1Ref, toggleEnlacesProyecto1 ] = useDropdown();
+    // const [ tecnologiasProyecto2Open, tecnologiasProyecto2Ref, toggleTeconologiasProyecto2 ] = useDropdown();
+    // const [ enlacesProyecto2Open, enlacesProyecto2Ref, toggleEnlacesProyecto2 ] = useDropdown()
+    // const [ tecnologiasProyecto3Open, tecnologiasProyecto3Ref, toggleTeconologiasProyecto3 ] = useDropdown();
+    // const [ enlacesProyecto3Open, enlacesProyecto3Ref, toggleEnlacesProyecto3 ] = useDropdown();
+    // const [ caracteristicasOpen, caracteristicasRef, toggleCaracteristicas ] = useDropdown();
 
     return (
         <section className="proyectos">
             <div className="container">
                 <h2 className="seccion-titulo">💼 Proyectos</h2>
-                <div className="proyecto-cards">
+                {/* <div className="proyecto-cards">
                     <div className="proyecto" ref={proyecto1Ref}>
                         <button className="btn-proyecto" onClick={toggleProyecto1}>
                             Harry Potter Fans
@@ -348,6 +351,102 @@ export const Proyectos = () => {
                                 </div>
                             </div>
                         )}
+                    </div>
+                </div> */}
+                <div class="row row-cols-1 row-cols-md-2 g-4" >
+                    <div class="card mb-3">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <img src={harryPotter} class="img-fluid rounded-start proyecto-imagenes" alt="Harry Potter Fans - Proyecto completo"/>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Harry Potter Fans</h5>
+                                    <p className="proyecto-descripcion">Página web temática sobre Harry Potter con diseño completamente responsivo y adaptativo.</p>
+                                    <p className="card-text">Rol: Proyecto individual | Desarrollo Web Front-end.</p>
+                                    <p className="proyecto-descripcion tecnologias">Tecnologias: Html5, Css3, Sass y Bootstrap</p>
+                                    <div>
+                                        <a href="https://github.com/MartinMatarrese/HARRY-POTTER-FAN" target="_blank" rel="noreferrer" className="m-2 btn btn-primary">
+                                            Código en GitHub
+                                        </a>
+                                        <a href="https://martinmatarrese.github.io/HARRY-POTTER-FAN/index.html" target="_blank" rel="noreferrer" className="btn btn-info">
+                                            🌐 Ver Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <img src={tiendaDeRopaDeportiva} class="img-fluid rounded-start proyecto-imagenes" alt="Tienda Deportiva - E-commerce"/>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tienda de ropa deportiva</h5>
+                                    <p className="proyecto-descripcion">E-commerce completo para indumentaria deportiva con sistema de carrito de compras, pasarela de pagos con Mercado Pago y panel de administración de órdenes y productos.</p>
+                                    <p className="card-text">Rol: Proyecto individual | Desarrollo Web Full Stack | En desarrollo.</p>
+                                    <p className="proyecto-descripcion tecnologias">Tecnologías: Node.js, Express, JWT, Passport, Mongo DB, React.js, CSS3, Swagger, Render y Docker</p>
+                                    <div>
+                                        <a href="https://github.com/MartinMatarrese/tiendaderopadeportiva" target="_blank" rel="noreferrer" className="m-2 btn btn-primary">
+                                            Código en GitHub
+                                        </a>
+                                        <a href="https://martinmatarrese.github.io/tiendaderopadeportiva/" target="_blank" rel="noreferrer" className="btn btn-info">
+                                            🌐 Ver Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <img src={diagrama} class="img-fluid rounded-start proyecto-imagenes" alt="SQL - Proyecto completo"/>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sistema de Gestión - SQL</h5>
+                                    <p className="proyecto-descripcion">Base de datos MySQL para e-commerce con triggers, stored procedures, vistas optimizadas y normalización de datos.</p>
+                                    <p className="card-text">Rol: Proyecto individual | Base de datos.</p>
+                                    <p className="proyecto-descripcion tecnologias">Tecnologias: MySQL</p>
+                                    <div>
+                                        <a href="https://github.com/MartinMatarrese/sistemadegestiondetiendaonline" target="_blank" rel="noreferrer" className="btn btn-primary">
+                                            Código en GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <img src= {testing} class="img-fluid rounded-start proyecto-imagenes" alt="SQL - Proyecto completo"/>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Documentación del proyecto de Testing QA</h5>
+                                    <p className="proyecto-descripcion">Analisis de la página centro-pet y pruebas con postman en la API Pokeapi</p>
+                                    <p className="card-text">Rol: Proyecto individual | Testing QA Manual</p>
+                                    <TestingQAManual/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <img src= {aws} class="img-fluid rounded-start proyecto-imagenes" alt="AWS - Proyecto completo"/>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Documentación del proyecto en Cloud Computing (AWS)</h5>
+                                    <CloudComputing/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

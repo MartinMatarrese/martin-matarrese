@@ -4,7 +4,8 @@
     justify-content: flex-end;
     align-items: center;
     gap: 1.5rem;
-    margin: 10px;
+    margin: 50px;
+    /* margin-top: 50px; */
     padding: 0 15px;
     flex-wrap: wrap;
 }
@@ -18,12 +19,16 @@
     justify-content: flex-end;
 }
 
+/* .menu-normal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+} */
+
 .menu-desplegable {
     position: fixed;
     top: auto;
     right: 0;
-    /* background: #000000; */
-    /* border: 1px solid rgba(37, 99, 235, 0.3); */
     background: transparent;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(37, 99, 235, 0.1);
@@ -33,7 +38,6 @@
     gap: 0.5rem;
     padding: 0.8rem;
     z-index: 1000;
-    /* min-width: 180px; */
     width: 70%;
     backdrop-filter: blur(10px);
     margin-top: 80px;
@@ -57,7 +61,8 @@
 .secciones {
     cursor: pointer;
     text-decoration: none;
-    color: #2563eb;
+    /* color: #2563eb; */
+    color: white;
     font-size: 1rem;
     padding: 8px 16px;
     border-radius: 8px;
@@ -73,10 +78,9 @@
 }
 
 .secciones:hover {
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(37, 99, 235, 0.05) 100%);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(37, 99, 235, 0.15);
-    color: #1d4de8;
+    /* color: #1d4de8; */
 }
 
 .secciones::after {
@@ -96,13 +100,14 @@
 }
 
 .secciones.active {
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.15) 0%, rgba(37, 99, 235, 0.1) 100%);
-    color: #1e40af;
+    /* background: linear-gradient(135deg, rgba(37, 99, 235, 0.15) 0%, rgba(37, 99, 235, 0.1) 100%); */
+    /* color: #1e40af; */
+    color: white;
     font-weight: 600;
     transform: translateY(-2px);
-    box-shadow: 
+    /* box-shadow: 
         0 6px 20px rgba(37, 99, 235, 0.15),
-        inset 0 0 0 1px rgba(37, 99, 235, 0.2);
+        inset 0 0 0 1px rgba(37, 99, 235, 0.2); */
 }
 
 .secciones.active::after {
