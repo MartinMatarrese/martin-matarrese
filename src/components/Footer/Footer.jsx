@@ -16,7 +16,7 @@ export const Footer = () => {
                         </div>
                         <div className="contacto-info">
                             <h4>Gmail</h4>
-                            <span>martinmatarrese1@gmail.com</span>
+                            <span>matarresemartin@gmail.com</span>
                         </div>
                     </a>
                     <a href="https://wa.me/5491156672350" target="_blank" rel="noreferrer" className="contacto-card">
